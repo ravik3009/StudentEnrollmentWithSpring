@@ -1,4 +1,4 @@
-package com.github.elizabetht.controller;
+package com.github.ravik.controller;
 
 import javax.validation.Valid;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.github.elizabetht.model.Student;
-import com.github.elizabetht.model.StudentLogin;
-import com.github.elizabetht.service.StudentService;
+import com.github.ravik.model.Student;
+import com.github.ravik.model.StudentLogin;
+import com.github.ravik.service.StudentService;
 
 @Controller
 @SessionAttributes("student")

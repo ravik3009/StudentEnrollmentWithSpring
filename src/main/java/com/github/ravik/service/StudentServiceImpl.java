@@ -1,11 +1,11 @@
-package com.github.elizabetht.service;
+package com.github.ravik.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.github.elizabetht.model.Student;
-import com.github.elizabetht.repository.StudentRepository;
+import com.github.ravik.model.Student;
+import com.github.ravik.repository.StudentRepository;
 
 @Service("studentService")
 public class StudentServiceImpl implements StudentService {

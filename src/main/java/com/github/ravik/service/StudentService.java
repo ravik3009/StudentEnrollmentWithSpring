@@ -1,6 +1,6 @@
-package com.github.elizabetht.service;
+package com.github.ravik.service;
 
-import com.github.elizabetht.model.Student;
+import com.github.ravik.model.Student;
 
 public interface StudentService {
 	Student save(Student student);

@@ -11,7 +11,7 @@
 
 	<context:annotation-config />
 	
-	<jpa:repositories base-package="com.github.elizabetht.repository" />
+	<jpa:repositories base-package="com.github.ravik.repository" />
 	
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 
