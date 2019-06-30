@@ -4,7 +4,9 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -19,8 +21,10 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Student {
 
 	@Id
-	@GeneratedValue
-	private Long id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "student_id_seq")
+	//@SequenceGenerator(name = "student_id_seq", sequenceName = "SEQ_STUDENT")
+	private Long student_id;
 	
 	@NotEmpty
 	@Size(min=4, max=20)
@@ -45,12 +49,14 @@ public class Student {
 	@DateTimeFormat(pattern="MM/dd/yyyy")
 	private Date dateOfBirth;
 	
-	public Long getId() {
-		return id;
+	
+
+	public Long getStudent_id() {
+		return student_id;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setStudent_id(Long student_id) {
+		this.student_id = student_id;
 	}
 
 	public String getUserName() {
