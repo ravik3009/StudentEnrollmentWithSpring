@@ -1,11 +1,11 @@
-package com.github.elizabetht.repository;
+package com.github.ravik.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.github.elizabetht.model.Student;
+import com.github.ravik.model.Student;
 
 @Repository("studentRepository")
 public interface StudentRepository extends JpaRepository<Student, Long> {
