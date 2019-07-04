@@ -1,17 +1,9 @@
 package com.github.ravik.model;
 
-import javax.validation.constraints.Size;
-
-import org.hibernate.validator.constraints.NotEmpty;
-
 public class StudentLogin {
 
-	@NotEmpty
-	@Size(min=4, max=20)
 	private String userName;
-		
-	@NotEmpty
-	@Size(min=4, max=8)
+
 	private String password;
 
 	public String getPassword() {
@@ -28,5 +20,5 @@ public class StudentLogin {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
-	}	
+	}
 }
